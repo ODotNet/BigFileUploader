@@ -1,0 +1,81 @@
+﻿@model string
+@using Odn.Uploader.Common
+@{
+    var btnRedom = "Btn" + CommonHelper.GenerateRandomInteger();
+    var imgRedom = "Img" + CommonHelper.GenerateRandomInteger();
+    string fildName = ViewData.TemplateInfo.HtmlFieldPrefix;
+    var fildValue = ViewData.TemplateInfo.FormattedModelValue;
+}
+<div id="uploader" class="wu-example">
+    <!--用来存放文件信息-->
+    <div class="filename"></div>
+    <div class="state"></div>
+    <div class="progress">
+        <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+           40% Complete (success)
+        </div>
+    </div>
+    <div class="btns">
+        <div id="picker">选择文件</div>
+        <button id="ctlBtn" class="btn btn-default">开始上传</button>
+        <button id="pause" class="btn btn-danger">暂停上传</button>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(function () {
+        var GUID = WebUploader.Base.guid();//一个GUID
+        var uploader = WebUploader.create({
+            swf: '/Scripts/Plugins/webuploader-0.1.5/Uploader.swf',
+            server: '@Url.Action("Upload")',
+            pick: '#picker',
+            resize: false,
+            threads:1,
+            chunked: true,//开始分片上传
+            chunkSize: 2048000,//每一片的大小
+            formData: {
+                guid: GUID //自定义参数，待会儿解释
+            }
+        });
+        uploader.on('fileQueued', function (file) {
+            $("#uploader .filename").html("文件名：" + file.name);
+            $("#uploader .state").html('等待上传');
+        });
+        uploader.on('uploadSuccess', function (file, response) {
+            $.post('@Url.Action("Merge")', { guid: GUID, fileName: file.name }, function (data) {
+                $list.text('已上传');
+            });
+        });
+        uploader.on('uploadProgress', function (file, percentage) {
+            $("#uploader .progress-bar").width(percentage * 100 + '%');
+            console.log(percentage);
+        });
+        uploader.on('uploadSuccess', function () {
+            $("#uploader .progress-bar").removeClass('progress-bar-striped').removeClass('active').removeClass('progress-bar-info').addClass('progress-bar-success');
+            $("#uploader .state").html("上传成功...");
+
+        });
+        uploader.on('uploadError', function () {
+            $("#uploader .progress-bar").removeClass('progress-bar-striped').removeClass('active').removeClass('progress-bar-info').addClass('progress-bar-danger');
+            $("#uploader .state").html("上传失败...");
+        });
+
+        $("#ctlBtn").click(function () {
+            uploader.upload();
+            $("#ctlBtn").text("上传");
+            $('#ctlBtn').attr('disabled', 'disabled');
+            $("#uploader .progress-bar").addClass('progress-bar-striped').addClass('active');
+            $("#uploader .state").html("上传中...");
+        });
+        $('#pause').click(function () {
+            uploader.stop(true);
+            $('#ctlBtn').removeAttr('disabled');
+            $("#ctlBtn").text("继续上传");
+            $("#uploader .state").html("暂停中...");
+            $("#uploader .progress-bar").removeClass('progress-bar-striped').removeClass('active');
+        });
+    });
+
+</script>
+<link href="~/Scripts/Plugins/webuploader-0.1.5/webuploader.css" rel="stylesheet" />
+<script src="~/Scripts/Plugins/webuploader-0.1.5/webuploader.nolog.js"></script>

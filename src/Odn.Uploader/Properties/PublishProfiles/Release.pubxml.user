@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\Publish\Odn.Uploader</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>06/12/2016 22:05:29</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>06/12/2016 22:05:28</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>06/12/2016 22:05:29</publishTime>
+    </File>
+    <File Include="bin/Odn.Uploader.dll">
+      <publishTime>06/12/2016 23:47:43</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>06/12/2016 22:05:28</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>06/12/2016 22:05:28</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>06/12/2016 22:05:28</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>06/12/2016 22:05:27</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>06/12/2016 22:05:28</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>06/12/2016 22:05:28</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>06/12/2016 22:05:28</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>06/12/2016 22:05:29</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.css">
+      <publishTime>06/12/2016 22:28:55</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.css.map">
+      <publishTime>06/12/2016 22:28:55</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.min.css">
+      <publishTime>06/12/2016 22:28:55</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.min.css.map">
+      <publishTime>06/12/2016 22:28:55</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>06/12/2016 22:28:55</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css.map">
+      <publishTime>06/12/2016 22:28:55</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>06/12/2016 22:28:55</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css.map">
+      <publishTime>06/12/2016 22:28:55</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>06/12/2016 22:05:25</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>06/12/2016 22:05:25</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>06/12/2016 22:28:55</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>06/12/2016 22:28:55</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>06/12/2016 22:28:55</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>06/12/2016 22:28:55</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>06/12/2016 22:28:55</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>06/12/2016 22:05:25</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>06/12/2016 22:28:55</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>06/12/2016 22:28:55</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>06/12/2016 22:28:55</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.js">
+      <publishTime>06/12/2016 22:05:26</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.js">
+      <publishTime>06/12/2016 22:05:26</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.map">
+      <publishTime>06/12/2016 22:05:26</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>06/12/2016 22:05:29</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>06/12/2016 22:05:29</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>06/12/2016 22:05:29</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>06/12/2016 22:05:29</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.6.2.js">
+      <publishTime>06/12/2016 22:05:29</publishTime>
+    </File>
+    <File Include="Scripts/Plugins/webuploader-0.1.5/README.md">
+      <publishTime>06/12/2016 22:07:06</publishTime>
+    </File>
+    <File Include="Scripts/Plugins/webuploader-0.1.5/Uploader.swf">
+      <publishTime>06/12/2016 22:07:06</publishTime>
+    </File>
+    <File Include="Scripts/Plugins/webuploader-0.1.5/webuploader.css">
+      <publishTime>06/12/2016 22:07:06</publishTime>
+    </File>
+    <File Include="Scripts/Plugins/webuploader-0.1.5/webuploader.custom.js">
+      <publishTime>06/12/2016 22:07:06</publishTime>
+    </File>
+    <File Include="Scripts/Plugins/webuploader-0.1.5/webuploader.custom.min.js">
+      <publishTime>06/12/2016 22:07:06</publishTime>
+    </File>
+    <File Include="Scripts/Plugins/webuploader-0.1.5/webuploader.fis.js">
+      <publishTime>06/12/2016 22:07:06</publishTime>
+    </File>
+    <File Include="Scripts/Plugins/webuploader-0.1.5/webuploader.flashonly.js">
+      <publishTime>06/12/2016 22:07:06</publishTime>
+    </File>
+    <File Include="Scripts/Plugins/webuploader-0.1.5/webuploader.flashonly.min.js">
+      <publishTime>06/12/2016 22:07:06</publishTime>
+    </File>
+    <File Include="Scripts/Plugins/webuploader-0.1.5/webuploader.html5only.js">
+      <publishTime>06/12/2016 22:07:06</publishTime>
+    </File>
+    <File Include="Scripts/Plugins/webuploader-0.1.5/webuploader.html5only.min.js">
+      <publishTime>06/12/2016 22:07:06</publishTime>
+    </File>
+    <File Include="Scripts/Plugins/webuploader-0.1.5/webuploader.js">
+      <publishTime>06/12/2016 22:07:06</publishTime>
+    </File>
+    <File Include="Scripts/Plugins/webuploader-0.1.5/webuploader.min.js">
+      <publishTime>06/12/2016 22:07:06</publishTime>
+    </File>
+    <File Include="Scripts/Plugins/webuploader-0.1.5/webuploader.noimage.js">
+      <publishTime>06/12/2016 22:07:06</publishTime>
+    </File>
+    <File Include="Scripts/Plugins/webuploader-0.1.5/webuploader.noimage.min.js">
+      <publishTime>06/12/2016 22:07:06</publishTime>
+    </File>
+    <File Include="Scripts/Plugins/webuploader-0.1.5/webuploader.nolog.js">
+      <publishTime>06/12/2016 22:07:06</publishTime>
+    </File>
+    <File Include="Scripts/Plugins/webuploader-0.1.5/webuploader.nolog.min.js">
+      <publishTime>06/12/2016 22:07:06</publishTime>
+    </File>
+    <File Include="Scripts/Plugins/webuploader-0.1.5/webuploader.withoutimage.js">
+      <publishTime>06/12/2016 22:07:06</publishTime>
+    </File>
+    <File Include="Scripts/Plugins/webuploader-0.1.5/webuploader.withoutimage.min.js">
+      <publishTime>06/12/2016 22:07:06</publishTime>
+    </File>
+    <File Include="Scripts/respond.js">
+      <publishTime>06/12/2016 22:05:29</publishTime>
+    </File>
+    <File Include="Scripts/respond.min.js">
+      <publishTime>06/12/2016 22:05:29</publishTime>
+    </File>
+    <File Include="Scripts/_references.js">
+      <publishTime>06/12/2016 22:28:55</publishTime>
+    </File>
+    <File Include="Views/Home/About.cshtml">
+      <publishTime>06/12/2016 22:05:25</publishTime>
+    </File>
+    <File Include="Views/Home/Contact.cshtml">
+      <publishTime>06/12/2016 22:05:25</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>06/12/2016 23:46:51</publishTime>
+    </File>
+    <File Include="Views/Shared/EditorTemplates/BigFile.cshtml">
+      <publishTime>06/12/2016 23:34:51</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>06/12/2016 22:05:25</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>06/12/2016 22:27:05</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>06/12/2016 22:05:25</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>06/12/2016 22:05:25</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>06/12/2016 23:47:43</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
